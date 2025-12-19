@@ -1,4 +1,6 @@
-chrome.downloads.onDeterminingFilename.addListener(function(item, suggest) {
+const browserAPI = typeof browser !== 'undefined' ? browser : chrome;
+
+browserAPI.downloads.onDeterminingFilename.addListener(function(item, suggest) {
   const filename = item.filename;
   const extension = filename.split('.').pop().toLowerCase();
 
@@ -76,5 +78,5 @@ chrome.downloads.onDeterminingFilename.addListener(function(item, suggest) {
     folder = folderMappings[extension] + '/';
   }
 
-  suggest({ filename: folder + filename });
+  suggest({ filename: folder + filename }, true);
 });

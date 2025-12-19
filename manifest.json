@@ -4,8 +4,13 @@
   "version": "0.3",
   "manifest_version": 3,
   "permissions": ["downloads"],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "pathon@sulthon.extension"
+    }
+  },
   "background": {
-    "service_worker": "background.js"
+    "scripts": ["background.js"]
   },
   "action": {
     "default_popup": "main.html",
