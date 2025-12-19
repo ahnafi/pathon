@@ -8,7 +8,7 @@ Pathon sekarang kompatibel dengan Firefox dan Zen Browser (berbasis Firefox). Ik
 
 1. Buka Firefox dan navigasikan ke `about:debugging#/runtime/this-firefox`
 2. Klik "Load Temporary Add-on"
-3. Pilih file `manifest.json` dari folder `/home/sulthon/code/pathon-zen`
+3. Pilih file `manifest.json` dari folder `/home/sulthon/code/pathon`
 4. Extension akan dimuat sementara (berlaku hingga Firefox ditutup)
 
 **Catatan**: Untuk instalasi permanen, extension perlu ditandatangani oleh Mozilla atau di-package sebagai XPI.
@@ -29,7 +29,7 @@ Zen Browser berbasis Firefox, jadi prosesnya serupa:
 
 1. Buka Zen Browser dan navigasikan ke `about:debugging#/runtime/this-firefox`
 2. Klik "Load Temporary Add-on"
-3. Pilih file `manifest.json` dari folder `/home/sulthon/code/pathon-zen`
+3. Pilih file `manifest.json` dari folder `/home/sulthon/code/pathon`
 4. Extension akan mulai berfungsi
 
 ## Kompatibilitas
